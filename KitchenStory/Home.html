@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Buttons</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styel.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+      <a class="nav-brand">
+        <img src="logo.jpg" width="50px" height="50px">Kitchen Story</a>
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="Home.html#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="Home.html#about" class="nav-link">About</a></li>
+
+                <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" 
+                    data-toggle="dropdown" 
+                    aria-haspopup="true"
+                    aria-expanded="false" 
+                    role="button" 
+                    id="dpn">Profile</a>
+                    <div class="dropdown-menu" aria-labelledby="dpn">
+                        <a class="dropdown-item">view profile</a>
+                    </div>
+                </li>   -->             
+            </ul>
+
+            <div class="form-inline">
+              <input type="search" class="form-control my-2 mr-2" id="search" placeholder="Search">
+              <button class="btn btn-outline-light" onclick="searchSet()">Search</button>
+            </div>
+
+            <div class="cart-info" class="pl-3">
+              <a href="Cart.html" style='color:black'>
+                <i class="fas fa-shopping-cart"></i><span>0</span>
+            </a>
+              
+            </div>
+
+        </div>
+
+    </nav>   
+
+    <section class="main">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-7 pt-5 text-center">
+            <h1>Nature Has Always Cared For Us!!</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-7 mx-auto">
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="./img/spices.png" width="100px" height="100px" class="img-luid">
+                <h6>SPICES</h6>
+
+              </div>
+              <div class="col-sm-4">
+                <img src="./img/vegies.webp" width="100px" height="100px" class="img-luid">
+                <h6>VEGETABLES</h6>
+
+              </div>
+              <div class="col-sm-4">
+                <img src="./img/fruits.png" width="100px" height="100px" class="img-luid">
+                <h6>FRUITS</h6>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="product">      
+      <div class="container py-5">
+        <div class="text-center">
+          <h2>Products</h2>
+          <br>
+        </div>
+        <div class="row"  id="abc">
+
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact">
+      <div class="container col-md-5 bg-light">
+        <div class="text-center">
+          <h2>Contact Us</h2>
+        <h5>Always be in touch with us</h5>
+        </div>
+        
+
+        <form>
+          <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" type="text" required>
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-control" required></textarea>
+          </div>
+
+          <button class="btn btn-block btn-success" onclick="success('Successfuly submitted')">Submit</button>
+
+        </form>
+
+      </div>
+
+    </section>
+    <br><br>
+
+    <section id="about" class="pt-5">
+      <div class="container">
+        <div class="col-lg-6 pt-5 text-center">
+          <h1>We provide delivery within <span class="text-warning">30 min!!</span></h1>
+          <br>
+          <h6>We are trusted grocery shop you can buy your necessary products user your phone.
+            So get your grocery fresh every morning.
+            Kitchen Story grocery is just a DOOR STEP AWAY!!<br>
+            Home delivery for vegetables ,fruits ,spices and other groceries</h6>
+
+          <button class="btn btn-danger"><a href="#product" style="text-decoration:none;">Book Now!!</a></button>
+
+        </div>
+
+
+      </div>
+
+    </section>
+    
+
+    <script src="./js/script.js"></script>
+    <script src="./js/validation.js"></script>
+    
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!--<sctipt src="../js/bootstrap.min.js"></sctipt>-->
+  </body>
+</html>
+
+<!--
+
+<div class="container">
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img src="./img/product-6.jpg" width="150px" height="150px" class="img-luid">
+              </div>
+            </div>
+            <h6>Pomogrante</h6>
+            <p>$23 <a href="#"class="add-cart item1"><span><i class="fas fa-shopping-cart"></i></span></a></p>
+          </div>
+  
+          <div class="col-lg-3 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img src="./img/product-7.jpg" width="150px" height="150px" class="img-luid">
+                <h6>Onion</h6>
+                <p>$12 <a href="#"class="add-cart item1"><span><i class="fas fa-shopping-cart"></i></span></a></p>
+              </div>
+            </div>
+          </div>
+          
+  
+          <div class="col-lg-3 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img src="./img/cart-1.jpg" width="150px" height="150px" class="img-luid">
+                <h6>Pudina</h6>
+                <p>$7 <a href="#"class="add-cart item1"><span><i class="fas fa-shopping-cart"></i></span></a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 text-center">  
+            <div class="card">
+              <div class="card-body">
+                <img src="./img/home-img-1.png" width="150px" height="150px" class="img-luid">
+                <h6>Capsicum</h6>
+                <p>$30 <a href="#"class="add-cart item1"><span><i class="fas fa-shopping-cart"></i></span></a></p>                
+              </div>
+            </div>
+            </div>
+
+
+          
+          
+
+        </div>
+      </div>
+
+
+
+
+-->
